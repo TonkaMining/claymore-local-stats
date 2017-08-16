@@ -1,0 +1,11 @@
+{
+  "name": "tonka-mining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "claymoreStats": "node ./getClaymoreStats"
+  },
+  "author": "",
+  "license": "ISC"
+}

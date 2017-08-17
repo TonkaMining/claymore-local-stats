@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "claymoreStats": "node ./getClaymoreStats"
+    "setup-env": "node ./scripts/createDevelopmentEnvFile",
+    "poll": "node ./index"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "mongoose": "^4.11.7"
+  }
 }

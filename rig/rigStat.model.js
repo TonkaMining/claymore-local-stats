@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const rigStatsSchema = Schema({
+const rigStatSchema = Schema({
     time: Number,
     version: String,
     runningTime: String,
@@ -14,6 +14,6 @@ const rigStatsSchema = Schema({
     invalidSharesAndPoolSwitches: String
 });
 
-const RigStatsModel = mongoose.model('RigStatsModel', rigStatsSchema);
+const RigStatModel = mongoose.model('RigStatModel', rigStatSchema);
 
-module.exports = RigStatsModel;
+module.exports = RigStatModel;

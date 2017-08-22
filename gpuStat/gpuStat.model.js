@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 const gpuStatSchema = Schema({
     time: { type: Date, default: Date.now },
     cardId: String,
+    rig: String,
+    rigPosition: Number,
     hashRate: Number,
     temperature: Number,
-    fanSpeed: Number,
-    rigPosition: Number,
-    rigName: String
-}, { collection: 'gpuStats'});
+    fanSpeed: Number
+}, { collection: 'gpustats'});
 
 const GpuStatModel = mongoose.model('GpuStatModel', gpuStatSchema);
 

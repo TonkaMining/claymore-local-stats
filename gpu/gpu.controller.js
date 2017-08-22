@@ -1,5 +1,9 @@
 const GpuModel = require('./gpu.model');
 
+function getGpuListByRigPosition() {
+    return GpuModel.find().sort({ "rig": 1, "rigPosition": 1 }).exec();
+}
+
 function getGpuList(req, res) {
     GpuModel.find().sort('name').exec((error, gpuList) => {
         if (error) {
@@ -43,6 +47,7 @@ function deleteGpu(req, res) {
 }
 
 module.exports = {
+    getGpuListByRigPosition: getGpuListByRigPosition,
     getGpuList: getGpuList,
     createGpu: createGpu,
     getGpu: getGpu,

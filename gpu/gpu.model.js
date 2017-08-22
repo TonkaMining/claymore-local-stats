@@ -13,6 +13,7 @@ const gpuSchema = Schema({
     coreClock: Number,
     memoryClock: Number,
     cost: Number,
+    power: Number,
     purchaseDate: Date
 }, { collection: 'gpus' });
 

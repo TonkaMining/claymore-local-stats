@@ -1,5 +1,5 @@
 const dotenv = require('dotenv').load();
-const rigStatController = require('./rig/rigStat.controller');
+const rigStatController = require('../rigStat/rigStat.controller');
 
 const PORT = process.env.PORT || 3333;
 const LOCAL_IP = process.env.LOCAL_IP || '118.119.207.199';

@@ -1,6 +1,6 @@
 const dotenv = require('dotenv').load();
 const mongoose = require('mongoose');
-const pollClaymoreMinerLocalStats = require('./pollClaymoreStats');
+const pollClaymoreMinerLocalStats = require('./scripts/pollClaymoreStats');
 
 const mongoUri = process.env.MONGODB_URI;
 const INTERVAL_DELAY_MS = 1000 * 60 * 5; // 5 minutes

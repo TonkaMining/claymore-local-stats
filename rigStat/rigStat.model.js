@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const rigStatSchema = Schema({
-    time: Number,
+    time: { type: Number, index: true, unique: true },
     version: String,
     runningTime: String,
     hashrateWithShares: String,

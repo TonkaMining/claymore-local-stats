@@ -22,7 +22,7 @@ const RigStatModel = require('./rigStat.model');
  *
  * @param response {object}
  */
-function saveRigStat(response) {
+function saveRigStat(response, rigName) {
     const parsedResponse = JSON.parse(response);
 
     if (!parsedResponse.result) {
@@ -35,6 +35,7 @@ function saveRigStat(response) {
     const model = new RigStatModel();
 
     model.time = new Date().getTime();
+    model.rig = rigName;
     model.version = currentStats[0];
     model.runningTime = currentStats[1];
     model.hashrateWithShares = currentStats[2];

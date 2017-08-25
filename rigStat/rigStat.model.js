@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const rigStatSchema = Schema({
     time: { type: Number, index: true, unique: true },
+    rig: String,
     version: String,
     runningTime: String,
     hashrateWithShares: String,
